@@ -1,34 +1,77 @@
-# Structural Programming
+# Solved Tasks - Structured Programming Course
 
-## Overview
-This repository contains solutions for the tasks assigned during the first half-term period. The tasks encompass various domains from Structural Programming in C
+Welcome to the repository containing the solved tasks for the Structured Programming course. This repository contains solutions to various programming tasks designed to enhance your understanding and proficiency in structured programming concepts.
 
-## Content
-- **Task 1:** Description of the task and solution code (if applicable).
-- **Task 2:** Description of the task and solution code (if applicable).
-- **Task 3:** Description of the task and solution code (if applicable).
-- **Task 4:** Description of the task and solution code (if applicable).
-- **Task 5:** Description of the task and solution code (if applicable).
-- **Task 6:** Description of the task and solution code (if applicable).
-- **Task 7:** Description of the task and solution code (if applicable).
-- **Task 8:** Description of the task and solution code (if applicable).
-- **Task 9:** Description of the task and solution code (if applicable).
-- **Task 10:** Description of the task and solution code (if applicable).
-- **Task 11:** Description of the task and solution code (if applicable).
-- **Task 12:** Description of the task and solution code (if applicable).
-- **Task 13:** Description of the task and solution code (if applicable).
-- **Task 14:** Description of the task and solution code (if applicable).
-- **Task 15:** Description of the task and solution code (if applicable).
-- **Task 16:** Description of the task and solution code (if applicable).
-- **Task 17:** Description of the task and solution code (if applicable).
-- **Task 18:** Description of the task and solution code (if applicable).
-- **Task 19:** Description of the task and solution code (if applicable).
-- **Task 20:** Description of the task and solution code (if applicable).
-- **Task 21:** Description of the task and solution code (if applicable).
-- **Task 22:** Description of the task and solution code (if applicable).
+## Table of Contents
+
+- [About](#about)
+- [Tasks](#tasks)
+- [File Structure](#file-structure)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About
+
+This repository contains solutions to tasks assigned during the Structured Programming course. Each task is designed to reinforce concepts such as control structures, functions, arrays, loops, and other fundamental principles of structured programming.
+
+## Tasks
+
+1. **Task 1: Basic Control Structures**
+    - Description: Implement basic control structures such as if-else statements and switch-case statements.
+    - Solution: [task1_solution.c](task1_solution.c)
+
+2. **Task 2: Loops and Iteration**
+    - Description: Practice loops including for, while, and do-while loops.
+    - Solution: [task2_solution.c](task2_solution.c)
+
+3. **Task 3: Functions**
+    - Description: Implement and utilize functions for code modularity and reusability.
+    - Solution: [task3_solution.c](task3_solution.c)
+
+4. **Task 4: Arrays**
+    - Description: Work with arrays and practice array manipulation and traversal.
+    - Solution: [task4_solution.c](task4_solution.c)
+
+5. **Task 5: File Handling**
+    - Description: Read from and write to files, and handle file input/output operations.
+    - Solution: [task5_solution.c](task5_solution.c)
+
+## File Structure
+
+- **task1_solution.c**: Contains the solution to Task 1.
+- **task2_solution.c**: Contains the solution to Task 2.
+- **task3_solution.c**: Contains the solution to Task 3.
+- **task4_solution.c**: Contains the solution to Task 4.
+- **task5_solution.c**: Contains the solution to Task 5.
+
+## Usage
+
+To use these solutions:
+
+1. Clone the repository to your local machine:
+    ```bash
+    git clone https://github.com/yourusername/structured-programming-tasks.git
+    ```
+
+2. Navigate to the directory containing the desired solution.
+
+3. Compile the source code using a C compiler:
+    ```bash
+    gcc -o task_solution task_solution.c
+    ```
+
+4. Run the compiled executable:
+    ```bash
+    ./task_solution
+    ```
+
+5. Follow the instructions prompted by the program.
 
 ## Contributing
-Contributions to this repository are welcome. If you have a better solution or wish to add more tasks, feel free to create a pull request.
+
+Contributions to enhance existing solutions or add new tasks are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
 ## License
-This repository is licensed under the [MIT License](LICENSE).
+
+This project is licensed under the [MIT License](LICENSE).

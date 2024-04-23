@@ -19,7 +19,7 @@ To use these solutions:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/structured-programming-tasks.git
+   git clone https://github.com/zhivko-kocev/structured-programming.git
    ```
 
 2. Navigate to the directory containing the desired solution.

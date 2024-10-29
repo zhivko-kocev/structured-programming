@@ -7,46 +7,42 @@ Eден природен e „интересен“ ако неговиот об
 што е „интересен“. Ако внесениот број не е валиден, да се отпечати соодветна
 порака (Brojot ne e validen).
 */
-int obraten(int n)
-{
-    int a = n;
 
-    int obr = a % 10;
-    while (a > 0)
-    {
-        a /= 10;
-        obr *= 10;
-        obr += (a % 10);
-    }
-    return obr;
+int reversed(int number) {
+
+  int reverse = 0;
+  while (number) {
+    reverse *= 10;
+    reverse += (number % 10);
+    number /= 10;
+  }
+  return reverse;
 }
-int brCifri(int n)
-{
-    int a = n;
 
-    int brojac = 0;
-    while (a > 0)
-    {
-        brojac += 1;
-        a /= 10;
-    }
-    return brojac;
+int num_digits(int number) {
+
+  int counter = 0;
+  while (number > 0) {
+    counter += 1;
+    number /= 10;
+  }
+  return counter;
 }
-int main()
-{
-    int n;
-    scanf("%d", &n);
-    if (n > 9)
-    {
-        for (int i = n - 1; i > 0; i--)
 
-        {
-            if (obraten(i) % brCifri(i) == 0)
-                printf("%d", obraten(i));
-            break;
-        }
-    }
-    else
-        printf("Brojot ne e validen");
+int main() {
+  int n;
+  scanf("%d", &n);
+
+  if (n < 10) {
+    printf("Brojot ne e validen");
     return 0;
+  }
+
+  for (int i = n - 1; i > 0; i--) {
+    if (reversed(i) % num_digits(i) == 0) {
+      printf("%d", i);
+      break;
+    }
+  }
+  return 0;
 }

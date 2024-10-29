@@ -6,48 +6,57 @@
 Еден број “е парен еквивалент” на друг број, ако и само ако неговите цифри се
 наоѓаат на парните позиции од другиот број, во истиот редослед. Соодветно да се
 испечатат пораки „PAREN“ и „NE“.
-Позициите треба да се сметаат оддесно-налево (најмалку значајната цифра е на позиција 1)
+Позициите треба да се сметаат оддесно-налево (најмалку значајната цифра е на
+позиција 1)
 */
-int br(int a, int b)
-{
-    int temp;
-    if (a > b)
-    {
-        temp = b;
-        while (temp)
-            if (temp % 10 == (a / 10) % 10)
-            {
-                temp /= 10;
-                a /= 100;
-            }
-            else
-                return 1;
+int equivalent(int num1, int num2) {
+
+  int temp;
+
+  if (num1 > num2) {
+
+    temp = num2;
+
+    while (temp) {
+
+      if (temp % 10 == (num1 / 10) % 10) {
+
+        temp /= 10;
+        num1 /= 100;
+
+      } else {
+        return 1;
+      }
     }
-    else
-    {
-        temp = a;
-        while (temp)
-            if (temp % 10 == (b / 10) % 10)
-            {
-                temp /= 10;
-                b /= 100;
-            }
-            else
-                return 1;
+
+  } else {
+
+    temp = num1;
+
+    while (temp) {
+
+      if (temp % 10 == (num2 / 10) % 10) {
+
+        temp /= 10;
+        num2 /= 100;
+
+      } else {
+        return 1;
+      }
     }
-    return 0;
+  }
+  return 0;
 }
-int main()
-{
-    int a, b;
-    scanf("%d %d", &a, &b);
-    if (a <= 0 || b <= 0)
-    {
-        printf("Invalid input");
-        return 0;
-    }
-    if (br(a, b) == 1)
-        printf("NE");
-    else if (br(a, b) == 0)
-        printf("PAREN");
+int main() {
+  int num1, num2;
+  scanf("%d %d", &num1, &num2);
+
+  if (num1 <= 0 || num2 <= 0) {
+
+    printf("Invalid input");
+    return 0;
+  }
+
+  printf("%s", (!equivalent(num1, num2)) ? "PAREN" : "NE");
+  return 0;
 }
